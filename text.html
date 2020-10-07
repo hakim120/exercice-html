@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to the groove</h1>
+
+    <hr>
+    
+    <FORM METHOD="POST" ACTION="http://jkorpela.fi/cgi-bin/echo.cgi">
+        <TABLE BORDER="1">
+            <tr>
+            <td rowspan="9">fiche personnelle</td>
+            </tr>
+          <TR>
+            <TD>Nom</TD>
+            <TD>
+              <INPUT TYPE="TEXT" NAME="name" maxlength="20" SIZE="25">
+            </TD>
+          </TR>
+          <TR>
+            <TD>Prenom</TD>
+            <TD><INPUT TYPE="TEXT" NAME="Prenom" maxlength="20" SIZE="25"></TD>
+          </TR>
+          <TR>
+              
+           <TD> <label for="bday"> date de naissance :</label></TD>
+           <TD> <input type="date" id="bday" name="date de naissance"></TD></TR>
+           <TR>
+               <TD>sex</TD><TD>
+            <LABEL><INPUT TYPE="RADIO" NAME="sex"
+            VALUE="Female">Female</LABEL>
+            
+            <LABEL><INPUT TYPE="RADIO" NAME="sex" VALUE="Male">Male</LABEL></TD>
+            </TR>
+            <TR>
+           <TD> <label for="email">Enter your gmail.com email:</label></TD>
+
+<TD><input type="email" id="email"
+       pattern=".+@gmail.com" size="30" required></TD></TR>
+<TR>
+      <TD> <label for="phone">Enter your phone number:</label></TD>T
+
+     <TD> <input type="tel" id="phone" name="phone"
+              pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}"
+              required></TD></TR>
+
+<TR>
+    <td>profession</td>
+    <td class="dropdown">
+        <select name="filter_for" >
+            <option value="etudiant">etudiant</option>
+            <option value="ingenieur">ingenieur</option>
+            <option value="ensignant">ensignant</option>
+            
+        </select>
+    
+</td> 
+</tr>
+<tr>    
+  <td>adresse:</td>    
+  <td><textarea rows="10" cols="20" name="adresse"></textarea></td>
+  </tr>
+  <tr>
+    <td rowspan="3">preference</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+     style musique
+      </td>
+     </tr>
+     <tr>
+     <td>
+     <input type="checkbox" name="musique" value="R&B">R&B<br>    
+     <input type="checkbox" name="musique" value="Soul"> Soul <br>   
+     <input type="checkbox" name="musique" value="Jaz">Jaz <br>
+      </td>
+      
+  <td><input type="checkbox" name="musique" value="Rock">Rock<br>    
+    <input type="checkbox" name="musique" value="Electronic"> Electronic <br>   
+    <input type="checkbox" name="musique" value="Classic">Classic </td></tr>
+    <tr>
+      <td rowspan="4">
+      information de connexion
+      </td>
+      <td> <label for="uname"><b>login</b></label></td>
+       <td> <input type="text" placeholder="Enter Username" name="login" required></td>
+       <tr><td> <label for="psw"><b>Password</b></label></td>
+       <td> <input type="password" placeholder="Enter Password" name="mot de passe" required></td></tr>
+       <tr><td>confirmer le mot de passe</td>
+        <td><input type="password" placeholder="Confirm Password" id="confirm_password" required></td></tr>
+      
+      <td><INPUT TYPE="SUBMIT" VALUE="envoyer" NAME="B1"></td>
+       <td> <INPUT TYPE="reset" NAME="nom" VALUE=" Annuler "></td>
+      
+      </TABLE>
+       
+        </FORM>
+</body>
+</html>
